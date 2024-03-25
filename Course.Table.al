@@ -58,7 +58,7 @@ table 50100 "CRONUS Course"
             Caption = 'Instructor Code';
             TableRelation = Resource where(Type = const(Person));
         }
-        field(120; "Instructor Name"; Text[50])
+        field(120; "Instructor Name"; Text[100])
         {
             Editable = false;
             FieldClass = FlowField;
