@@ -60,18 +60,19 @@ page 50100 "CRONUS Course Card"
     {
         area(Processing)
         {
-            action(ActionName)
+            action("Resource Card")
             {
                 ApplicationArea = All;
-
-                trigger OnAction()
-                begin
-
-                end;
+                Caption = 'Resource';
+                ToolTip = 'Open the Resource Card';
+                RunObject = Page "Resource Card";
+                RunPageLink = "No." = field("Instructor Code");
+                Image = Relationship;
+                Promoted = true;
+                PromotedCategory = Process;
             }
         }
     }
 
-    var
-        myInt: Integer;
+
 }
